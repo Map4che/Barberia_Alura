@@ -1,0 +1,304 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background:#CCCCCC;
+    padding: 20px 0;
+}
+.caja{
+    width:940px;
+    position: relative;
+    margin:0 auto;
+}
+
+nav{
+    position:absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+    
+}
+
+nav a{
+    text-transform:uppercase;
+    color:black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width:940px;
+    margin: 0 auto;
+    padding:50px;
+}
+.productos li{
+    display:inline-block;
+    text-align:center;
+    width:30%;
+    vertical-align:top;
+    margin:0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.productos li:hover{
+    border-color:#c78c19;
+}
+
+.productos li:active{
+    border-color:#088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;;
+}
+
+.productos li:hover h2{
+    font-size:40px;
+}
+
+
+.prod-descripcion{
+    font-size:18px;
+}
+
+.prod-precio{
+    font-size:20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+footer{
+    text-align:center;
+    background:url(imagenes/bg.jpg);
+    padding:40px;
+}
+
+.copyright{
+    color: white;
+    padding:20px;
+    font-size:13px
+}
+
+form{
+    margin: 40px;
+}
+form label, form legend{
+    display:block;
+    font-size: 20px;
+    margin:0 0 10px;
+}
+
+.input-padron{
+    display:block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width:50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.button{
+    background: orange;
+    width: 40%;
+    padding:15px 0;
+    height:60px;
+    color:white;
+    border-radius: 25px;
+    margin: 20px ;
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.button:hover{
+    background-color: #088c19;
+    transform: scale(2) rotate(360deg);
+}
+
+table{
+    margin: 40px;
+}
+
+thead{
+    background: grey;
+    color: white;
+}
+
+td, th{
+    border: 1px solid black;
+    padding:8px 15px;
+}
+
+/*Pagina Index*/
+
+.descripcion{
+    padding: 3em 0 ;
+    background: #fefefe;
+    width:940px;
+    margin:0 auto;
+}
+
+#banner{
+    width: 100%;
+    height:280px;
+} 
+
+.utensilios{
+    width:120px;
+    float:left;
+    margin:0 20px 20px 0;
+    border-radius: 15px;
+}
+
+.titulo-principal{
+    text-align:center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+    clear:left;
+}
+
+.descripcion p{
+    margin: 0 0 1em;
+    width:940px;
+    margin:0 auto;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+em{
+    font-style: italic;
+}
+
+.contenido-mapa{
+    padding:1em 0;
+    width:940px;
+    margin:0 auto;
+    
+}
+
+.mapa{  
+    background: linear-gradient(#fefefe,#888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align:center
+}
+
+#mapita{
+    border-radius: 20px;
+}
+
+.diferenciales{
+    padding:3em 0;
+    background: #888888
+}
+
+.contenido-diferenciales{
+    width:640px;
+    margin: 0 auto;
+}
+
+#titulo-diferenciales{
+    color:white;
+}
+
+#listIndex{
+    width: 40%;
+    display:inline-block;
+    vertical-align:top;
+    color:white;
+}
+
+#listIndex :nth-child(1){
+    font-weight:bold;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content:"✭";
+}
+
+.imgDifenciales{
+    width: 60%;
+    transition:1s;
+    border-radius: 20px;
+    box-shadow:10px 10px 30px 10px black
+}
+
+.imgDifenciales:hover{
+    opacity: 60%;
+    
+}
+
+.video{
+    width:560px;
+    margin:4em auto;
+    
+}
+
+#videito{
+    border-radius: 20px;
+}
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align:center;
+    }
+
+    nav{
+        position:static;
+        width:60%;
+        margin-bottom: 8px;;
+    }
+    
+    .productos, .productos li, .caja, .descripcion, .descripcion p, .contenido-mapa, .diferenciales, .contenido-diferenciales, .video{
+        width:auto;
+    }
+
+    #listIndex, .imgDifenciales{
+        width:100%;
+    }
+
+}
+
+.productos li{
+    margin:8px;
+}
+
+.input-padron{
+    width:80%;
+}
+
+#boton-contacto{
+    width:160px;
+    height:40px;
+    padding:4px;
+    font-size:16px;
+}
+
